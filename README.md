@@ -1,70 +1,111 @@
-# React.js and Tailwind CSS Assignment
+# React.js, JSX, and Tailwind CSS - Mastering Front-End Development
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+A fully functional React application demonstrating component architecture, state management, hooks usage, API integration, and responsive design with Tailwind CSS.
 
-## Assignment Overview
+## 🚀 Features
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+- **Reusable UI Components**: Button, Card, Navbar, Footer with customizable props
+- **Task Manager**: Full CRUD functionality with localStorage persistence
+- **State Management**: React hooks (useState, useEffect, useContext)
+- **API Integration**: Fetches data from JSONPlaceholder with search and pagination
+- **Theme Switcher**: Light/Dark mode with persistent user preference
+- **Responsive Design**: Works seamlessly on mobile, tablet, and desktop
+- **Clean Architecture**: Organized folder structure following React best practices
 
-## Getting Started
+## 📦 Tech Stack
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
+- **React 19** - UI library
+- **Vite** - Build tool and dev server
+- **Tailwind CSS 3** - Utility-first CSS framework
+- **React Router 6** - Client-side routing
+- **JSONPlaceholder API** - Mock REST API for testing
 
-## Files Included
+## 🛠️ Setup Instructions
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+### Prerequisites
 
-## Requirements
+- Node.js (v18 or higher recommended)
+- npm or yarn package manager
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
+### Installation
 
-## Project Structure
-
-```
+1. Clone the repository:
+```bash
+git clone <your-repository-url>
+cd <repository-name>
+Install dependencies:
+npm install
+Start the development server:
+npm run dev
+Open your browser and navigate to the local development URL (typically http://localhost:5173)
+📁 Project Structure
 src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
-```
-
-## Submission
-
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
-
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
-
-## Resources
-
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+├── components/         # Reusable UI components
+│   ├── Button.jsx
+│   ├── Card.jsx
+│   ├── Navbar.jsx
+│   ├── Footer.jsx
+│   ├── Layout.jsx
+│   └── TaskManager.jsx
+├── pages/             # Page components
+│   ├── Home.jsx
+│   ├── TasksPage.jsx
+│   └── APIPage.jsx
+├── utils/             # Utilities and custom hooks
+│   ├── useLocalStorage.js
+│   └── ThemeContext.jsx
+├── App.jsx            # Main app component with routing
+├── main.jsx           # App entry point
+└── index.css          # Tailwind CSS imports
+✨ Features Breakdown
+Task Manager
+Add new tasks with enter key or button click
+Mark tasks as complete/incomplete
+Delete tasks
+Filter tasks (All, Active, Completed)
+Persistent storage using localStorage
+Task counter showing remaining tasks
+API Integration
+Fetches posts from JSONPlaceholder API
+Real-time search functionality
+Pagination (10 items per page)
+Loading states with spinner animation
+Error handling with retry functionality
+Theme System
+Context-based theme management
+Persistent theme preference
+Smooth transitions between themes
+System-wide dark mode support
+🎨 Component Documentation
+Button Component
+Accepts variant prop: primary, secondary, danger
+<Button variant="primary" onClick={handleClick}>
+  Click Me
+</Button>
+Card Component
+Flexible container with optional title
+<Card title="Card Title">
+  Content goes here
+</Card>
+📱 Screenshots
+(Add screenshots of your application here after deployment)
+Home Page
+�
+Load image
+Task Manager
+�
+Load image
+API Data Browser
+�
+Load image
+Dark Mode
+�
+Load image
+🌐 Live Demo
+Deployed URL: [Add your deployed URL here]
+👤 Author
+[Khensani Ruth Mahwayi]
+GitHub: @MahwayiRuth
+📄 License
+This project is part of a coding assignment for educational purposes.
+---
